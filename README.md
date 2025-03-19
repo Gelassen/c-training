@@ -1,3 +1,16 @@
+# Install environment
+1. g++ --version
+2. gdb --version
+3. sudo apt install libgtest-dev
+4. cd /usr/src/gtest
+5. sudo cmake CMakeLists.txt
+6. sudo make
+7. sudo cp lib/*.a /usr/lib
+
+# Compile & run tests
+1. g++ -std=c++17 test_custom_stack.cpp /usr/lib/libgtest.a /usr/lib/libgtest_main.a -pthread -o test_custom_stack
+2. ./test_custom_stack
+
 # C++ Mastery Roadmap
 
 This repository contains a set of tasks designed to help experienced software engineers master C++ in a hands-on way. The focus is on real-world, console-based tasks to cover core C++ concepts, tools, and best practices. Each task is designed to reinforce specific aspects of C++ that are essential for becoming proficient in the language.
